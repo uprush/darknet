@@ -105,7 +105,7 @@ class DarknetServer(Flask):
 
             if self.pub_img_flag:
                 try:
-                    outputfilepath = self.yolo.insert_rectangle(outputfilepath, yolo_results, '/usr/local/Cellar/nginx/1.15.0/html/images')
+                    outputfilepath = self.yolo.insert_rectangle(outputfilepath, yolo_results, '/var/www/html/images/predict')
                     filename = outputfilepath.split(os.path.sep)[-1]
                     res['image_src'] = 'http://%s/images/%s' % (self.host, filename)
 
