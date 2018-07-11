@@ -24,6 +24,16 @@ This server has two API.
 
 - darknet revision: 1b001a7f58aacc7f8b751332d3a9d6d6d0200a2d
 
+- OpenCV
+```
+sudo apt-get install libopencv-dev
+```
+
+- pykakasai
+```
+pip install six semidbm
+```
+
 # Setup
 1. Install darknet
    Install darknet, reading the website of darknet
@@ -52,7 +62,7 @@ This server has two API.
         `$ curl -XPOST -F file=@./data/person.jpg http://localhost:8080/detect`
 
         If the server work well, you will get message like following
-        When you start up "-pf true" and the process can access /var/www/html/images, 
+        When you start up "-pf true" and the process can access /var/www/html/images,
         you can get the image src.
 
         ```
